@@ -14,7 +14,7 @@ const FetchCategory = () => {
       <h1>Fetch Category: {categoryName}</h1>
       {isError ? <h2>{error}</h2> : isLoading ? <LoadingComponent /> : ""}
       <Row className="row row-cols-sm-3">
-        {data.map(item => <CatCard key={item.id} imgSrc={item.url} />)}
+        {data.map(item => <CatCard key={item.id} imgSrc={item.url} id={item.id} />)}
       </Row>
 
     </div>
